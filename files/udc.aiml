@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+  
+  
+  <category>
+    <pattern>CAN I EAT IN CLASS</pattern>
+    <template>No, eating in class can result in a detention and a follow up meeting</template>
+    
+</category>
+<category>
+    <pattern>* EAT *</pattern>
+    <template>
+        <srai>CAN I EAT IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern>* eat * in class </pattern>
+    <template>
+        <srai>can i eat in class</srai>
+    </template>
+</category>
+<category>
+    <pattern>* FOOD * in class</pattern>
+    <template>
+        <srai> can i eat in class</srai>
+    </template>
+</category>
+<category>
+    <pattern>CAN I LISTEN TO MUSIC IN CLASS</pattern>
+    <template>It depends, you need to ask your teacher at least and if they agree then you can.</template>
+</category>
+<category>
+    <pattern>CAN I USE * HEADPHONES * IN CLASS</pattern>
+    <template>
+        <srai> CAN I LISTEN TO MUSIC IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHAT DO I WEAR FOR SPORT</pattern>
+    <template> for school sport you must wear the PE uniform that the school mandates. for winter and summer sport you must purchase the correct uniform to look unisin with your team. you may alternate the 2 if there is no other option.</template>
+</category>
+<category>
+    <pattern> CAN I * WEAR * SPORT UNIFORM FOR PE</pattern>
+    <template>
+        <srai> WHAT DO I WEAR FOR SPORT</srai>
+    </template>
+</category>
+<category>
+    <pattern> DO I HAVE TO LISTEN TO MY TEACHER IN CLASS</pattern>
+    <template> yes, you should and must listen to your teacher</template>
+</category>
+<category>
+    <pattern> IF MY TEACHER HAS A * TASK * SHOULD I DO IT</pattern>
+    <template>
+        <SRAI> DO I HAVE TO LISTEN TO MY TEACHER</SRAI>
+    </template>
+</category>
+<category>
+    <pattern> SHOULD I PAY * ATTENTION * IN CLASS</pattern>
+    <template>
+        <srai> DO I HAVE TO LISTEN TO MY TEACHER</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN I DO OTHER WORK IN CLASS</pattern>
+    <template> yes, as long as your classes work is done.</template>
+</category>
+<category>
+    <pattern> CAN I FINISH MY OTHER CLASSES * HOMEWORK * IN ANOTHER CLASS</pattern>
+    <template>
+        <srai> CAN I DO OTHER WORK IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN I * STUDY * IN CLASS</pattern>
+    <template>
+        <srai> CAN I DO OTHER WORK IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN I USE MY * PHONE * IN CLASS</pattern>
+    <template> Phones should remain in lockers from 8:50am until 3:25pm</template>
+</category>
+<category>
+    <pattern> SHOULD MY * PHONE * BE IN MY POCKET</pattern>
+    <template>
+        <srai> CAN I USE MY * PHONE * IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> WILL I GET PUNISHED FOR HAVING MY * PHONE * ON ME</pattern>
+    <template>
+        <srai> CAN I HAVE MY * PHONE * ON ME</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHAT IF IM BEHIND ON WORK</pattern>
+    <template> It is okay if you are behind on work, continue to work on it and make it known to your teacher that you are late on work, however you may get a study support session.</template>
+</category>
+<category>
+    <pattern> WHAT IF IM * LATE * ON MY WORK </pattern>
+    <template>
+        <srai> WHAT IF IM BEHIND ON WORK</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHAT IF I * DONT * COMPLETE * MY HOMEWORK </pattern>
+    <template>
+        <srai> WHAT IF IM BEHIND ON WORK</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHAT IF I AM LATE TO SCHOOL</pattern>
+    <template>  a note has have been sent out to the school or there has been a transportation issue. if that is not the case then you will recieve a chronicle entry, 3 lates means you get a thursday detention.</template>
+</category>
+<category>
+    <pattern> WHAT IF I * MISS * MY BUS TO SCHOOL.</pattern>
+    <template>
+        <srai> WHAT IF I AM LATE TO SCHOOL.</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHAT IF THE BELL GOES * BEFORE * I GET TO SCHOOL </pattern>
+    <template>
+        <srai> WHAT IF I AM LATE TO SCHOOL</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHAT IF MY BUS HAS AN * ACCIDENT * ON * THE WAY TO SCHOOL</pattern>
+    <template>
+        <srai> WHAT IF I AM LATE TO SCHOOL </srai>
+    </template>
+</category>
+<category>
+    <pattern> WHAT IF I AM LATE * TOO * MANY * TIMES</pattern>
+    <template>
+        <srai> WHAT IF I AM LATE TO SCHOOL</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN I GO TO THE BATHROOM WHENEVER I WANT</pattern>
+    <template> No, you must ask your teacher for permission</template>
+</category>
+<category>
+    <pattern> CAN I * WALK * OUT * OF THE CLASS TO USE THE BATHROOM</pattern>
+    <template>
+        <srai> CAN I GO TO THE BATHROOM WHENEVER I WANT</srai>
+    </template>
+</category>
+<category>
+    <pattern> DO I HAVE TO * ASK * TO GO TO THE BATHROOM </pattern>
+    <template>
+        <srai> CAN I GO TO THE BATHROOM WHENEVER I WANT</srai>
+    </template>
+</category>
+<category>
+    <pattern>CAN I SIT WHEREVER I WANT</pattern>
+    <template> unless ther is a seating plan then you can sit anywhere, but at the teachers desk</template>
+</category>
+<category>
+    <pattern> DO I SIT AT THE * BACK * OR * FRONT * OF THE CLASS</pattern>
+    <template>
+        <srai> CAN I SIT WHEREVER I WANT</srai>
+    </template>
+</category>
+<category>
+    <pattern> DO I * SIT * WITH THE TEACHER</pattern>
+    <template>
+        <srai> CAN I SIT WHEREVER IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN I CHANGE WHERE I AM * SEATING * IN CLASS</pattern>
+    <template>
+        <srai>CAN I SIT WHEREVER IN CLASS</srai>
+    </template>
+</category>
+
+<category>
+   <pattern> CAN I PLAY GAMES IN CLASS</pattern>
+    <template> Unless all your work has been completed and its allowed aslong as you are not distracting others with it. </template>
+</category>
+<category>
+    <pattern>IS IT OKAY TO PLAY * GAMES * IN CLASS</pattern>
+    <template>
+        <srai> CAN I PLAY GAMES IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> ARE * GAMES * ALLOWED IN SCHOOL</pattern>
+    <template>
+        <srai> CAN I PLAY GAMES IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHAT IS A CHRONICLE ENTRY</pattern>
+    <template> A chronicle entry is a right up, this can either be good or bad depneds on the actions</template>
+</category>
+<category>
+    <pattern> ARE * CHRONICLE * ENTRIES BAD</pattern>
+    <template>
+        <srai> WHAT IS A CHRONICLE ENTRY</srai>
+    </template>
+</category>
+<category>
+    <pattern> HOW DO I GET A * CHRONICLE *</pattern>
+    <template>
+        <srai>WHAT IS A CHRONICLE ENTRY</srai>
+    </template>
+</category>
+<category>
+    <pattern> DO I TALK BACK TO THE TEACHER</pattern>
+    <template> NO, unless it is a genuine questions talking back to a teacher can result in a write up.</template>
+</category>
+<category>
+    <pattern> CAN I * TALK * BACK TO A TEACHER</pattern>
+    <template>
+        <srai> DO I TALK BACK TO A TEACHER</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN I ASK A * QUESTION * TO THE TEACHER</pattern>
+    <template>
+        <srai> DO I TALK BACK TO THE TEACHER</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN I ASK * SILLY * QUESTIONS TO THE TEACHER</pattern>
+    <template>
+        <srai> DO I TALK BACK TO THE TEACHER</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHO CAN I ASK FOR HELP WITH WORK</pattern>
+    <template>  You can ask your classmates and the teacher for help on work</template>
+</category>
+<category>
+    <pattern> WHO DO I ASK FOR * HELP *</pattern>
+    <template>
+        <srai> WHO CAN I ASK FOR HELP WITH WORK</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHO CAN I ASK FOR * ASSISTANCE *</pattern>
+    <template>
+        <srai> WHO CAN I ASK FOR HELP WITH THE WORK</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHAT IF I BRING THE WRONG MATERIALS</pattern>
+    <template> you will have to go back to your locker to get the correct material</template>
+</category>
+<category>
+    <pattern> WHAT IF I * BRING * THE WRONG BOOK</pattern>
+    <template>
+        <srai> WHAT IF I BRING THE WRONG MATERIAL</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHAT IF I * FORGOT * MY BOOK</pattern>
+    <template>
+        <srai> WHAT IF I BRING THE WRONG MATERIALS</srai>
+    </template>
+</category>
+<category>
+    <pattern>CAN I CHARGE MY LAPTOP IN CLASS</pattern>
+    <template>yes, you may have to move though.</template>
+</category>
+<category>
+    <pattern>CAN I BRING A CHARGER TO CLASS</pattern>
+    <template>
+        <srai> CAN I * CHARGE * MY LOPTOP IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN A BRING A * CHARGER * TO CLASS</pattern>
+    <template>
+        <srai> CAN I CHARGE MY LAPTOP IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN I BORROW A * CHARGER * FROM A CLASSMATE</pattern>
+    <template>
+        <srai> CAN I CHARGE MY LAPTOP IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> WHAT IS A CHAMPAGNAT CREDIT</pattern>
+    <template>A champagnat credit is a positive write up, to encourage people to go above and beyond</template>
+</category>
+<category>
+    <pattern> IS A * CHAMPAGNAT * CREDIT * GOOD</pattern>
+    <template>
+        <srai> WHAT IS A CHAMPAGNAT CREDIT</srai>
+    </template>
+</category>
+<category>
+    <pattern> IS IT GOOD IF A GET A * CHAMPAGNAT * CREDIT *</pattern>
+    <template>
+        <srai> WHAT IS A CHAMPAGNAT CREDIT</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN I DRINK IN CLASS</pattern>
+    <template> yes, only water and from a drink bottle.</template>
+</category>
+<category>
+    <pattern> CAN I BRING * WATER * TO CLASS</pattern>
+    <template>
+        <srai> CAN I DRINK IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN I SWEAR IN CLASS</pattern>
+    <template> no, swearing in class or school isnt allowed at all</template>
+</category>
+<category>
+    <pattern> IS IT ALLOWED TO * SWEAR *</pattern>
+    <template>
+        <srai> CAN I SWEAR IN CLASS</srai>
+    </template>
+</category>
+<category>
+    <pattern> CAN I DO MY OWN THING IN CLASS</pattern>
+    <template> yes, but all your work needs to be completed</template>
+</category>
+<category>
+    <pattern> CAN I EVER DO WHATERVER I * WANT *</pattern>
+    <template>
+        <srai> CAN I DO MY OWN THINGS</srai>
+    </template>
+</category>
+<category>
+    <pattern>AM I ALLOWED TO DO MY * OWN * THINGS</pattern>
+    <template>
+        <srai> CAN I DO MY OWN THINGS</srai>
+    </template>
+</category>
+</aiml>
